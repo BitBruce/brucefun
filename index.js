@@ -15,5 +15,12 @@ express()
   .get('/example/:id', (req, res) => res.send('id ' + req.params.id))
   .use('/api', apiRouter)
   .use('/lorem', lorem)
-  // .get('/lorem', (req, res) => res.send(loremIpsum({units: 'paragraphs'})))
+  .get('/times', (req, res) => {
+    let result = '';
+    const times = process.env.TIMES || 5;
+    for (i = 0; i < times; i++) {
+      result += i + ' ';
+    }
+    res.send(result);
+  })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
