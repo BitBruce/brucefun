@@ -4,15 +4,16 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 const apiRouter = require('./controllers/api');
-const lorem = "abcdzyxw";
+const lorem = require('./controllers/lorem');
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
-  .use('/api', apiRouter)
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/cool', (req, res) => res.send(cool()))
   .get('/example/:id', (req, res) => res.send('id ' + req.params.id))
-  .get('/lorem', (req, res) => res.send(lorem))
+  .use('/api', apiRouter)
+  .use('/lorem', lorem)
+  // .get('/lorem', (req, res) => res.send(loremIpsum({units: 'paragraphs'})))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
