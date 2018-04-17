@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 5000
 
 const apiRouter = require('./controllers/api');
 const lorem = require('./controllers/lorem');
+const times = require('./controllers/times');
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
@@ -15,12 +16,5 @@ express()
   .get('/example/:id', (req, res) => res.send('id ' + req.params.id))
   .use('/api', apiRouter)
   .use('/lorem', lorem)
-  .get('/times', (req, res) => {
-    let result = '';
-    const times = process.env.TIMES || 5;
-    for (i = 0; i < times; i++) {
-      result += i + ' ';
-    }
-    res.send(result);
-  })
+  .use('/times', times)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
