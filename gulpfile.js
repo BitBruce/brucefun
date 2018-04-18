@@ -7,7 +7,7 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 
 gulp.task('default', ['sass'], function() {
-
+  
 });
 
 gulp.task('sass', function () {
