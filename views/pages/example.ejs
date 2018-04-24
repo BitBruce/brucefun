@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<% include ../partials/header.ejs %>
+</head>
+<body>
+
+<% include ../partials/mynav.ejs %>
+
+<div class="jumbotron text-center">
+    <div class="container">
+        <h1><%= heading %></h1>
+    </div>
+</div>
+<div class="container">
+    <!--<%= data %>-->
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#grid" role="tab" data-toggle="tab">Grid</a></li>
+        <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="grid"><%- include('../partials/examples/grid') %></div>
+        <div class="tab-pane" id="profile">b</div>
+        <div class="tab-pane" id="messages">c</div>
+        <div class="tab-pane" id="settings">d</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -18,7 +18,14 @@
 https://getbootstrap.com/docs/3.3/components/#glyphicons~~
 
 ### Fontawesome
-https://fontawesome.com/get-started
+- https://fontawesome.com/get-started
+- https://fontawesome.com/icons
+
+### Other
+- Possible replacement for bootstrap's missing sub-dropdowns? https://semantic-ui.com/modules/dropdown.html#/definition
+(Relevant thread: https://github.com/twbs/bootstrap/issues/21026)
+- Hacky hover dropdowns w/o JS: https://codepen.io/svnt/pen/beEgre
+- meganavbar http://meganavbar.com/
 
 # node-js-getting-started
 

@@ -1,33 +1,58 @@
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="nav-item active">
-        <a href="/"><i class="fa fa-home"></i> Home</a>
-      </li>
-      <li>
-          <a href="#"><i class="fa fa-user"></i> Secret :)</a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa fa-info-sign"></span> Examples <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/cool">Cool Ascii Faces</a></li>
-            <li><a href="/lorem">Lorem Ipsum</a></li>
-            <li><a href="/lorem?num=50">50 Lorem Ipsum</a></li>
-            <li><a href="/lorem/custom">Custom Lorem Ipsum</a></li>
-            <li><a href="/example/1234567890">Example Playground</a></li>
-            <li><a href="/db">PostgreSQL DB Example</a></li>
-            <li><a href="/gettingstarted">Getting Started</a></li>
-            <li><a href="/bootstrap">Bootstrap Examples</a></li>
-            <li class="divider"></li>
-            <li><a href="/api">API (Scuffed)</a></li>
-            <li><a href="/times">Env var test</a></li>
+    <a class="navbar-brand" href="">Brucefun</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <!--<li class="nav-item"><a class="nav-link active" href="/"><i class="fa fa-home"></i> Home</a></li>-->
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Secret :)</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Examples</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="/cool">Cool Ascii Faces</a></li>
+            <li class="dropdown-item"><a href="/lorem">Lorem Ipsum</a></li>
+            <li class="dropdown-item"><a href="/lorem?num=50">50 Lorem Ipsum</a></li>
+            <li class="dropdown-item"><a href="/lorem/custom">Custom Lorem Ipsum</a></li>
+            <li class="dropdown-item"><a href="/example/1234567890">Example Playground</a></li>
+            <li class="dropdown-item"><a href="/db">PostgreSQL DB Example</a></li>
+            <li class="dropdown-item"><a href="/gettingstarted">Getting Started</a></li>
+            <li class="dropdown-item"><a href="/bootstrap">Bootstrap Examples</a></li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-item"><a href="/api">API (Scuffed)</a></li>
+            <li class="dropdown-item"><a href="/times">Env var test</a></li>
+            <!-- Hover sub-dropdown example -->
+            <li class="dropdown-divider"></li>
+            <li class="nav-item dropdown-submenu">
+              <a class="dropdown-item" tabindex="-1">Hover More</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="#">One</a></li>
+                <li class="dropdown-item"><a href="#">Two</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#">Even More..</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">3rd level</a></li>
+                    <li class="dropdown-submenu"><a class="dropdown-item" href="#">another level</a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">4th level</a></li>
+                        <li class="dropdown-item"><a href="#">4th level</a></li>
+                        <li class="dropdown-item"><a href="#">4th level</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="#">3rd level</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="navbar-right">
-        <a href="https://www.twitter.com/bitbruce_"><i class="fab fa-twitter"></i> Twitter</a>
-      </li>
-    </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.twitter.com/bitbruce_"><i class="fab fa-twitter"></i> Twitter</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
