@@ -1,3 +1,25 @@
+# ToDo/Ideas
+- Change templating language?
+- Try changing to typescript?
+- Use CMS?
+- Play audio
+-
+
+## Interesting addons
+- https://elements.heroku.com/addons/wrenchmode
+- https://elements.heroku.com/addons/wwwhisper
+- https://elements.heroku.com/buttons/cobyism/ghost-on-heroku
+- https://elements.heroku.com/addons/phrase
+- https://elements.heroku.com/addons/neutrino-audiomatic
+- https://elements.heroku.com/addons/scrapetastic
+- https://devcenter.heroku.com/articles/stream
+
+~~### Glyphicons
+https://getbootstrap.com/docs/3.3/components/#glyphicons~~
+
+### Fontawesome
+https://fontawesome.com/get-started
+
 # node-js-getting-started
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
