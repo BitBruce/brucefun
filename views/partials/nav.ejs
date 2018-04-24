@@ -1,33 +1,59 @@
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
-      </li>
-      <li>
-        <a href="https://devcenter.heroku.com/articles/how-heroku-works"><span class="glyphicon glyphicon-user"></span> How Heroku Works</a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-go">Getting Started with Go on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started with Clojure on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala on Heroku</a></li>
-            <li class="divider"></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a></li>
+    <a class="navbar-brand" href="/">Brucefun</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="navbar-toggler-icon"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto">
+        <!--<li class="nav-item"><a class="nav-link active" href="/"><i class="fa fa-home"></i> Home</a></li>-->
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Secret :)</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Examples</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="/cool">Cool Ascii Faces</a></li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-item"><a href="/lorem">Lorem Ipsum</a></li>
+            <li class="dropdown-item"><a href="/lorem?num=50">50 Lorem Ipsum</a></li>
+            <li class="dropdown-item"><a href="/lorem/custom">Custom Lorem Ipsum</a></li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-item"><a href="/bootstrap">Bootstrap Examples</a></li>
+            <li class="dropdown-item"><a href="/example/1234567890">Example Playground</a></li>
+            <li class="dropdown-item"><a href="/db">PostgreSQL DB Example</a></li>
+            <li class="dropdown-divider"></li>
+            <!--<li class="dropdown-item"><a href="/api">API (Scuffed)</a></li>-->
+            <li class="dropdown-item"><a href="/times">Env var test</a></li>
+            <!-- Hover sub-dropdown example -->
+            <li class="dropdown-divider"></li>
+            <li class="nav-item dropdown-submenu">
+              <a class="dropdown-item" tabindex="-1">Hover More</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="#">One</a></li>
+                <li class="dropdown-item"><a href="#">Two</a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#">Even More..</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">3rd level</a></li>
+                    <li class="dropdown-submenu"><a class="dropdown-item" href="#">another level</a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">4th level</a></li>
+                        <li class="dropdown-item"><a href="#">4th level</a></li>
+                        <li class="dropdown-item"><a href="#">4th level</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="#">3rd level</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="navbar-right">
-        <a href="https://devcenter.heroku.com"><span class="glyphicon glyphicon-book"></span> Heroku Dev Center</a>
-      </li>
-    </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.twitter.com/bitbruce_"><i class="fab fa-twitter"></i> Twitter</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

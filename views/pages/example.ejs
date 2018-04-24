@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<% include ../partials/mynav.ejs %>
+<% include ../partials/nav.ejs %>
 
 <div class="jumbotron text-center">
     <div class="container">
@@ -16,21 +16,23 @@
     <!--<%= data %>-->
 
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="active"><a href="#grid" role="tab" data-toggle="tab">Grid</a></li>
-        <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
-        <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
-        <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#grid" role="tab">Grid</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#album" role="tab">Album</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a></li>
+        <li class="nav-item"><a class="nav-link disabled" data-toggle="tab" href="#settings" role="tab">Settings</a></li>
     </ul>
 
     <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane active" id="grid"><%- include('../partials/examples/grid') %></div>
-        <div class="tab-pane" id="profile">b</div>
-        <div class="tab-pane" id="messages">c</div>
-        <div class="tab-pane" id="settings">d</div>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="grid" role="tabpanel"><%- include('../partials/examples/grid') %></div>
+        <div class="tab-pane fade" id="album" role="tabpanel"><%- include('../partials/examples/album') %></div>
+        <div class="tab-pane fade" id="messages" role="tabpanel">c</div>
+        <div class="tab-pane fade" id="settings" role="tabpanel">d</div>
     </div>
 </div>
+
+<% include ../partials/footer.ejs %>
 
 </body>
 </html>
