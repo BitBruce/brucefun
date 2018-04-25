@@ -14,6 +14,7 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
+  .get('/splash', (req, res) => res.render('pages/splash'))
   .get('/cool', (req, res) => res.send(cool()))
   .get('/example/:id', (req, res) => res.send('id ' + req.params.id))
   .use('/api', apiRouter)//scuffed
