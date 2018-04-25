@@ -3,7 +3,9 @@
 - Try changing to typescript?
 - Use CMS?
 - Play audio
--
+- [Build bootstrap](http://getbootstrap.com/docs/4.1/getting-started/webpack/)
+- [Display code on site](http://getbootstrap.com/docs/4.1/content/code/)
+- Build the pages you want! Build for practice for freelancing!
 
 ## Interesting addons
 - https://elements.heroku.com/addons/wrenchmode

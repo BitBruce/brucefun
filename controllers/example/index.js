@@ -14,6 +14,7 @@ router.get('/', function(req, res) {
   }
 });
 
+
 // router.get('/:page', function(req, res) {
 //   page: req.params.page;
 //   res.render('pages/dynamic', {page:page});
