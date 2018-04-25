@@ -8,8 +8,12 @@
     <%if (typeof page != 'undefined') { %>
     <%- include(page) %>
     <% } else { %>
-    <!-- Give instructions on using ?p= -->
-    duh
+    <!-- TODO: better-->
+    >> /example?p=
+    <br/>
+    >> More examples <a href="http://getbootstrap.com/docs/4.0/examples/">http://getbootstrap.com/docs/4.0/examples/</a>
+    <br/>
+    <button><a href="/">Home</a></button>
     <% } %>
 
     <% include ../partials/footer.ejs %>

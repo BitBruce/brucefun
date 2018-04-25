@@ -18,7 +18,7 @@ express()
   .get('/splash', (req, res) => res.render('partials/examples/splash'))
   .use('/example', example)
   .use('/lorem', lorem)
-  .use('/api', apiRouter)//scuffed
+  // .use('/api', apiRouter)//scuffed
   .use('/times', times)
   .use('/db', psqldb)
   .get('*', (req, res) => res.render('pages/notfound'))
