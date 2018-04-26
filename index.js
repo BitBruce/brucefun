@@ -1,8 +1,9 @@
-const cool = require('cool-ascii-faces');
 const express = require('express');
 const path = require('path');
 const PORT = process.env.PORT || 5000;
 
+const cool = require('cool-ascii-faces');
+const cat = require('cat-ascii-faces');
 const apiRouter = require('./controllers/api');
 const lorem = require('./controllers/lorem');
 const times = require('./controllers/times');
@@ -15,6 +16,7 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/cool', (req, res) => res.send(cool()))
+  .get('/cat', (req, res) => res.send(cat()))
   .get('/splash', (req, res) => res.render('partials/examples/splash'))
   .use('/example', example)
   .use('/lorem', lorem)

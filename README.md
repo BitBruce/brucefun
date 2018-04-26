@@ -1,8 +1,10 @@
 # ToDo/Ideas
 - Change templating language?
-- Try changing to typescript?
+- Try changing to typescript? (Just move to an angular app)
 - Use CMS?
 - Play audio (https://github.com/521dimensions/amplitudejs one example)
+- Change themes (https://hackerthemes.com/ && https://mdbootstrap.com/freebies/)
+- Custom bootstrap snippets! https://hackerthemes.com/bootstrap-buffet/
 - [Build bootstrap](http://getbootstrap.com/docs/4.1/getting-started/webpack/)
 - [Display code on site](http://getbootstrap.com/docs/4.1/content/code/)
 - Build the pages you want! Build for practice for freelancing!
