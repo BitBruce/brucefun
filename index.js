@@ -11,6 +11,10 @@ const times = require('./controllers/times');
 const psqldb = require('./controllers/db');
 const example = require('./controllers/example');
 
+function errorHandler (err, req, res, next) {
+  res.render('pages/error', {error:err});
+}
+
 express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
@@ -25,5 +29,6 @@ express()
   // .use('/api', apiRouter)//scuffed
   .use('/times', times)
   .use('/db', psqldb)
+  .use(errorHandler)
   .get('*', (req, res) => res.render('pages/notfound'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));

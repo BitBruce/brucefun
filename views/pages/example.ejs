@@ -7,8 +7,11 @@
 
     <%if (typeof page != 'undefined') { %>
 
+    <% try { %>
     <%- include(page) %>
-
+    <% } catch(error) { %>
+    <script>window.location.replace("/example");</script>
+    <% } %>
     <% } else { %>
 
     <!-- TODO: better-->
@@ -22,8 +25,6 @@
     </div>
 
     <% } %>
-
-    <% include ../partials/footer.ejs %>
 
 </body>
 </html>
