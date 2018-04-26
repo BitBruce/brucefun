@@ -1,0 +1,18 @@
+<% include ../nav.ejs %>
+
+<div class="container text-center">
+    <div class="jumbotron">
+        <button onclick="getAns()">Magic 8 Ball</button>
+        <h1 id="answer"></h1>
+    </div>
+</div>
+
+<script>
+    let getAns = function() {
+      fetch('/yesno').then(function(res) {
+        res.text().then(function (t) { document.getElementById('answer').innerText = t; }); //simpler way to do this?
+      });
+    }
+</script>
+
+<!-- for older browsers? <script src="https://cdn.rawgit.com/github/fetch/master/fetch.js"></script>-->

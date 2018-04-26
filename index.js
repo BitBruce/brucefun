@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 5000;
 
 const cool = require('cool-ascii-faces');
 const cat = require('cat-ascii-faces');
+const yesno = require('yes-no-words');
 const apiRouter = require('./controllers/api');
 const lorem = require('./controllers/lorem');
 const times = require('./controllers/times');
@@ -17,6 +18,7 @@ express()
   .get('/', (req, res) => res.render('pages/index'))
   .get('/cool', (req, res) => res.send(cool()))
   .get('/cat', (req, res) => res.send(cat()))
+  .get('/yesno', (req, res) => res.send(yesno.allRandom())) // move to API?
   .get('/splash', (req, res) => res.render('partials/examples/splash'))
   .use('/example', example)
   .use('/lorem', lorem)

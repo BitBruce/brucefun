@@ -5,13 +5,13 @@ const router      = new express.Router();
 
 // Optional parameter! ?p=
 router.get('/', function(req, res) {
+  payload = {};
   let p = req.query.p;
   if (p) {
-    let page = '../partials/examples/'+p+'.ejs';
-    res.render('pages/example', {page:page});
-  } else {
-    res.render('pages/example');
+    let page = '../partials/examples/' + p + '.ejs';
+    payload.page = page;
   }
+  res.render('pages/example', payload);
 });
 
 
