@@ -5,16 +5,12 @@
 </head>
 <body>
 
-    <%if (typeof page != 'undefined') { %>
-
     <% try { %>
-    <%- include(page) %>
-    <% } catch(error) { %>
-    <script>window.location.replace("/example");</script>
-    <% } %>
-    <% } else { %>
 
-    <!-- TODO: better-->
+    <%- include(page) %>
+
+    <% } catch(error) { %>
+
     <% include ../partials/nav.ejs %>
     <div class="container">
         <div class="jumbotron">
@@ -25,6 +21,8 @@
     </div>
 
     <% } %>
+
+    <!-- <script>window.location.replace("/example");</script> -->
 
 </body>
 </html>
