@@ -11,7 +11,6 @@ router.get('/', function(req, res) {
     let page = '../partials/examples/' + p + '.ejs';
     payload.page = page;
   }
-
   res.render('pages/example', payload);
 });
 
