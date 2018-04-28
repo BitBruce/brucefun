@@ -42,6 +42,7 @@
               <li>cool-ascii-faces</li>
               <li>cat-ascii-faces</li>
               <li>yes-or-no</li>
+              <li>Snowstorm</li>
             </ul>
           </li>
           <li>SoundManager2</li>
@@ -63,22 +64,16 @@
       </ul>
     </div>
 
-    <!--<button onclick="mySound.play()">mysound</button>-->
   </div>
 
   <% include ../partials/footer.ejs %>
 
-  <!--<script src="soundmanager2.js"></script>-->
-  <!--<script>-->
-    <!--var mySound;-->
-    <!--soundManager.setup({-->
-      <!--onready: function() {-->
-        <!--mySound = soundManager.createSound({-->
-          <!--url: 'WWMenuSelection.mp3'-->
-        <!--});-->
-      <!--}-->
-    <!--});-->
-  <!--</script>-->
+  <script src="js/snowstorm.js"></script>
+  <script>
+    snowStorm.snowColor = '#006600';
+    snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+    snowStorm.snowCharacter = '*';
+  </script>
 
   </body>
 </html>
