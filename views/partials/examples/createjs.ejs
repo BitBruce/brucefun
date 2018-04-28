@@ -49,7 +49,7 @@
     let audioPath = "assets/";
     let sounds = [
       {id:"Music", src:"WWMenuSelection.mp3"},
-      {id:"Thunder", src:"Thunder1.mp3"}
+      {id:"Thunder", src:"Thunder1.mp3"} //DNE so throws js error
     ];
 
     function loadSound() {
@@ -65,10 +65,17 @@
     function handleLoad(event) {
       // Do something with the loaded sound
       // createjs.Sound.play(event.src);
+
+      // My successful attempt to load song into HTML5 audio element
+      let audio = document.getElementById('audio');
+      // document.getElementById("musicplayer").src = audioPath + sounds.find(x => x.id === "Music").src;
+      document.getElementById("musicplayer").src = event.src;
+        audio.load();
     }
 
     function playSound() {
       // createjs.Sound.play(audioPath + sounds[0].src);
+      createjs.Sound.stop();
       createjs.Sound.play(audioPath + sounds.find(x => x.id === "Music").src);
     }
 
@@ -80,6 +87,7 @@
     }
 
     function handleFileComplete(event) {
+      // document.body.appendChild(event.result);
       let img = event.result;
       img.style.backgroundColor = 'green';
       document.body.appendChild(img);
@@ -90,11 +98,16 @@
     <div class="container text-center">
         <canvas id="demoCanvas" width="500" height="300"></canvas>
         <div>
+            <audio id="audio" controls="controls" >
+                <source id="musicplayer" src="" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio><br/>
             <button onclick="playSound();" class="playSound">Play Song</button><br/>
             <button onclick="loadImage();" class="load-image">Load Image</button><br/>
             <a href="https://createjs.com/getting-started">Createjs getting started</a><br/>
             <a href="https://createjs.com/tutorials/Basics%20and%20Best%20Practices/">Soundjs best practices</a><br/>
             <a href="https://createjs.com/tutorials/Mobile%20Safe%20Approach/">Mobile safe sounds</a>
+            <a href="https://createjs.com/tutorials/SoundJS%20and%20PreloadJS/">Preload sounds</a>
         </div>
     </div>
 </body>
