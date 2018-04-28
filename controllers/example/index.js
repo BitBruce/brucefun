@@ -14,10 +14,13 @@ router.get('/', function(req, res) {
   res.render('pages/example', payload);
 });
 
-
-// router.get('/:page', function(req, res) {
-//   page: req.params.page;
-//   res.render('pages/dynamic', {page:page});
-// });
+// /example/:page
+router.get('/:page', function(req, res) {
+  payload = {};
+  let p = req.params.page;
+  let page = '../partials/examples/' + p + '.ejs';
+  payload.page = page;
+  res.render('pages/example', payload);
+});
 
 module.exports = router;
