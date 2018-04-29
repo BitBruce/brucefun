@@ -54,13 +54,22 @@
       </div>
     </div>
     <div class="row">
+      <h3>Cheat sheets</h3>
       <ul>
+        <li><a href="https://github.com/azat-co/cheatsheets/tree/master/es6">ES6</a></li>
+        <li><a href="https://github.com/azat-co/cheatsheets/tree/master/node-npm">Node + npm</a></li>
+        <li><a href="https://github.com/azat-co/cheatsheets/tree/master/mongodb-mongoose">Mongo + mongoose</a></li>
+        <li><a href="https://github.com/azat-co/cheatsheets/tree/master/express4">Express4</a></li>
         <li><a href="https://hackerthemes.com/bootstrap-cheatsheet/">Bootstrap 4 cheat sheet!</a></li>
         <li><a href="https://hackerthemes.com/bootstrap-buffet/">Bootstrap cheat sheet kinda</a></li>
-        <li><a href="https://hackerthemes.com/bootstrap-themes/neon-glow/">Love this theme tho</a></li>
-        <li><a href="https://github.com/goldfire/howler.js">Check out howler (instead of SoundJS)</a></li>
+      </ul>
+      <h3>To check out</h3>
+      <ul>
+        <li><a href="https://hackerthemes.com/bootstrap-themes/neon-glow/">Bootstrap themes</a></li>
+        <li><a href="https://github.com/goldfire/howler.js">Howler (instead of SoundJS)</a></li>
+        <li><a href="https://github.com/sahat/hackathon-starter">Hackathon starter</a></li>
+        <li><a href="https://ponyfoo.com/articles/teach-yourself-nodejs-in-10-steps">Node in 10 steps</a></li>
         <li><a href="https://12factor.net/">The 12 Factor App</a></li>
-        <li><a href="https://github.com/sahat/hackathon-starter">Todo: check out this boilerplate</a></li>
       </ul>
     </div>
 
@@ -68,12 +77,7 @@
 
   <% include ../partials/footer.ejs %>
 
-  <script src="js/snowstorm.js"></script>
-  <script>
-    snowStorm.snowColor = '#006600';
-    snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
-    snowStorm.snowCharacter = '*';
-  </script>
+  <% include ../partials/examples/snowstorm.ejs %>
 
   </body>
 </html>
