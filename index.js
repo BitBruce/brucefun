@@ -10,6 +10,7 @@ const lorem = require('./controllers/lorem');
 const times = require('./controllers/times');
 const psqldb = require('./controllers/db');
 const example = require('./controllers/example');
+const matrix = require('./controllers/matrix');
 
 function errorHandler (err, req, res, next) {
   res.render('pages/error', {error:err});
@@ -29,6 +30,7 @@ express()
   // .use('/api', apiRouter)//scuffed
   .use('/times', times)
   .use('/db', psqldb)
+  .use('/matrix', matrix)
   .use(errorHandler)
   .get('*', (req, res) => res.render('pages/notfound'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
