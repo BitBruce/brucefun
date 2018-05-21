@@ -21,6 +21,7 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
+  .get('/oldhome', (req, res) => res.render('pages/oldhome'))
   .get('/cool', (req, res) => res.send(cool()))
   .get('/cat', (req, res) => res.send(cat()))
   .get('/yesno', (req, res) => res.send(yesno.allRandom())) // move to API?

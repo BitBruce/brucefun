@@ -1,92 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- By BitBruce https://www.github.com/BitBruce -->
   <% include ../partials/header.ejs %>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="home">
 
-  <% include ../partials/nav.ejs %>
-
-  <div class="jumbotron text-center">
-    <div class="container">
-      <!--<a href="/" class="lang-logo">-->
-        <!--<img src="assets/lang-logo.png">-->
-      <!--</a>-->
-      <i id="icon" class="fa fa-bitcoin" style="text-shadow: rgb(0, 71, 0) 0px 0px 0px, rgb(0, 74, 0) 1px 1px 0px, rgb(0, 78, 0) 2px 2px 0px, rgb(0, 81, 0) 3px 3px 0px, rgb(0, 84, 0) 4px 4px 0px, rgb(0, 87, 0) 5px 5px 0px, rgb(0, 90, 0) 6px 6px 0px, rgb(0, 93, 0) 7px 7px 0px, rgb(0, 96, 0) 8px 8px 0px, rgb(0, 99, 0) 9px 9px 0px; font-size: 80px; color: rgb(255, 255, 255); height: 128px; width: 128px; line-height: 128px; border-radius: 50%; text-align: center; background-color: rgb(0, 102, 0);"></i>
-      <h1>BitBruce</h1>
-    </div>
-    <audio controls="controls" ><!-- autoplay -->
-      <source src="/assets/WWMenuSelection.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-  <div class="container">
+  <div class="container main"><!-- container or container-fluid -->
     <div class="row">
-      <p>I could make browser games and showcase them here?</p>
-      <p>I could host static content and content generators (Lorem for example)</p>
-      <p>I could make this site public and provide examples + tutorials. Could use it instead of bitbruce.com</p>
-      <p>I could make this "my corner of the internet", expressing freely.</p>
-      <p>I could package my software stack (once finalized) for starters.</p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2>What I Used</h2>
-      </div>
-      <div class="col-sm-6">
-        <ul>
-          <li>Express</li>
-          <li>EJS</li>
-          <li>Gulp</li>
-          <li>SASS</li>
-          <li>Bootstrap 4</li>
-          <li>PostgreSQL</li>
-          <li>One-off npm packages
-            <ul>
-              <li>dotenv</li>
-              <li>cool-ascii-faces</li>
-              <li>cat-ascii-faces</li>
-              <li>yes-or-no</li>
-              <li>Snowstorm</li>
+      <div class="col-md-4">
+        <div class="panel text-center">
+          <div class="card bg-transparent">
+            <div class="avi">
+              <img src="/assets/bruce.jpg" alt="Avatar">
+            </div>
+            <div class="card-body" style="padding-top: 0;">
+              <h5 class="card-title">Bruce Robinson</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent">
+                <!-- Contact Chip -->
+                <a href="https://github.com/BitBruce/">
+                  <span class="mdl-chip mdl-chip--contact">
+                    <span class="mdl-chip__contact mdl-color--green mdl-color-text--white"><i class="fab fa-github"></i></span>
+                    <span class="mdl-chip__text">BitBruce</span>
+                  </span>
+                </a>
+              </li>
+              <li class="list-group-item"><a href="/oldhome">To the rest of the site -></a></li>
+              <!--<li class="list-group-item"><a href="https://twitter.com/bitbruce_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bitbruce_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>-->
             </ul>
-          </li>
-          <li>CreateJS suite</li>
-          <li>SoundManager2</li>
-          <li>Nodemon</li>
-          <li>Httpie</li>
-          <li>Glyphicons -> Fontawesome</li>
-          <li>IntelliJ + Emmet</li>
-        </ul>
+            <!--<div class="card-body">-->
+              <!--<div class="btn-group" role="group" aria-label="Basic example">-->
+                <!--<button type="button" class="btn btn-secondary"><i class="fab fa-github"></i>Left</button>-->
+                <!--<button type="button" class="btn btn-secondary"><i class="fab fa-github"></i>Middle</button>-->
+                <!--<button type="button" class="btn btn-secondary"><i class="fab fa-github"></i>Right</button>-->
+              <!--</div>-->
+            <!--</div>-->
+          </div>
+          <!--<div class="card">-->
+            <!--<div class="card-header">-->
+              <!--Current Projects-->
+            <!--</div>-->
+            <!--<ul class="list-group list-group-flush">-->
+              <!--<li class="list-group-item">Cras justo odio</li>-->
+              <!--<li class="list-group-item">Dapibus ac facilisis in</li>-->
+              <!--<li class="list-group-item">Vestibulum at eros</li>-->
+            <!--</ul>-->
+          <!--</div>-->
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <h3>Cheat sheets</h3>
-      <ul>
-        <li><a href="https://github.com/azat-co/cheatsheets/tree/master/es6">ES6</a></li>
-        <li><a href="https://github.com/azat-co/cheatsheets/tree/master/node-npm">Node + npm</a></li>
-        <li><a href="https://github.com/azat-co/cheatsheets/tree/master/mongodb-mongoose">Mongo + mongoose</a></li>
-        <li><a href="https://github.com/azat-co/cheatsheets/tree/master/express4">Express4</a></li>
-        <li><a href="https://hackerthemes.com/bootstrap-cheatsheet/">Bootstrap 4 cheat sheet!</a></li>
-        <li><a href="https://hackerthemes.com/bootstrap-buffet/">Bootstrap cheat sheet kinda</a></li>
-      </ul>
-      <h3>To check out</h3>
-      <ul>
-        <li><a href="https://hackerthemes.com/bootstrap-themes/neon-glow/">Bootstrap themes</a></li>
-        <li><a href="https://github.com/goldfire/howler.js">Howler (instead of SoundJS)</a></li>
-        <li><a href="https://github.com/sahat/hackathon-starter">Hackathon starter</a></li>
-        <li><a href="https://ponyfoo.com/articles/teach-yourself-nodejs-in-10-steps">Node in 10 steps</a></li>
-        <li><a href="https://12factor.net/">The 12 Factor App</a></li>
-      </ul>
-    </div>
+      <div class="col-md-4 order-md-1">
+        <div class="panel text-center">
+          <!--<button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Hide Music</button>-->
 
+          <div class="collapse show" id="collapseExample">
+            <iframe src="https://open.spotify.com/embed?uri=spotify:album:4Z4f0b1KAupm3VaeEWrZ9U" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+          </div>
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <blockquote>You are free to sever the chains of fate that bind you.</blockquote>
+              <cite title="Source Title">The Legend of Dragoon</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel text-center">
+          <!-- MDL Progress Bar with Indeterminate Progress -->
+          <!--<div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>-->
+          <!--<a class="twitter-timeline" href="https://twitter.com/BitBruce_?ref_src=twsrc%5Etfw">Tweets by BitBruce_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+          <a class="twitter-timeline" data-height="1000" data-theme="dark" data-link-color="#1b5e20" href="https://twitter.com/BitBruce_?ref_src=twsrc%5Etfw">Tweets by BitBruce_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <% include ../partials/footer.ejs %>
 
-  <% include ../partials/examples/snowstorm.ejs %>
-
-  </body>
+</body>
 </html>

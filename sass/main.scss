@@ -32,3 +32,81 @@
     }
   }
 }
+
+/* From bitbruceblog */
+$primary: #1b5e20;
+$light: #4c8c4a;
+$dark: #003300;
+
+body.home {
+  background-color: black;
+  background-image: url('/assets/bg10.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  & a {
+    color: $primary;
+
+    &:hover {
+      color: $light;
+    }
+  }
+
+  iframe {
+    margin: auto;
+  }
+
+  .main {
+    position:relative;
+    top:4em;
+    min-width: 220px;
+  }
+
+  .avi {
+    margin-top: 1.2em;
+
+    & img {
+      display:block;
+      background:$dark;
+      border-radius:50%;
+      overflow:hidden;
+      width:10em;
+      height:10em;
+      margin:auto;
+      border:2px solid #fff;
+    }
+  }
+
+  .panel {
+    margin: 8px 0;
+  }
+
+  /* Override bootstrap */
+  .bg-transparent {
+    border: 0;
+  }
+
+  .card {
+    //color: #fff;
+  }
+
+  .card-body {
+    color: #fff;
+  }
+
+  .btn {
+    background-color: $primary;
+    &:hover, &:active, &:visited, &:link {
+      background-color: $light;
+    }
+  }
+
+  /* Override mdl */
+  .mdl-color--green {
+    background-color: $primary !important;
+  }
+
+  .mdl-chip__text {
+    color: $primary;
+  }
+}
